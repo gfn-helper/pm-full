@@ -1,0 +1,43 @@
+post http://localhost:3001/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBjMzI2Y2Q3MDc0NTFiOWRjNWVlNWYiLCJpYXQiOjE3NjI4NTQ5MjQsImV4cCI6MTc2Mjk0MTMyNH0.6DdtxxtozWBPk_91FU3z5QxVXjOfYkzUXeKsRmD9V1o
+
+{
+      "projectId":"690afa01a7497e60110ccc62",
+      "title":"create login",
+      "description":"integration",
+      "type":"bug",
+      "key":"PM-7657",
+      "status":"done",
+      "priority":"high",
+      "dueDate":"7-11-2025",
+      "assignee":"690ad60d9d67e1a32fff5299",
+      "tags":[ "a", "b"]
+}
+
+###get tasks
+get http://localhost:3001/tasks/?projectId=69156d314a8b5c98fff3fb48&searchInput=inte
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE1NmQzMTRhOGI1Yzk4ZmZmM2ZiNDQiLCJpYXQiOjE3NjMzNjE2NjYsImV4cCI6MTc2MzQ0ODA2Nn0.t4fIeWL_9WQ5qiwwcw59VoO2L0FG_jwyl1wWhKsgKbE
+
+### get tasks by id
+get http://localhost:3001/tasks/690b162fee1cdb8de7663cd8/
+
+###update tasks by id
+put http://localhost:3001/tasks/690881df2449d985dede9b20/
+Content-Type: application/json
+
+{
+      "projectId":"690afa01a7497e60110ccc62",
+      "title":"create signUp",
+      "description":"signUp page create,backend integration",
+      "type":"bug",
+      "status":"todo",
+      "priority":"low",
+      "dueDate":"7-11-2025",
+      "reporter":"6909fa3687f03877367010d0",
+      "assignee":"690ad60d9d67e1a32fff5299",
+      "tags":[ "signUp", "bug", "tasks"]
+}
+
+### delete tasks by id
+DELETE http://localhost:3001/tasks/690b3e5a1a1bf5d977285fcd/

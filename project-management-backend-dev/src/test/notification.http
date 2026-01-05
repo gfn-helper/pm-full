@@ -1,0 +1,8 @@
+post http://localhost:3001/notification/send
+Content-Type: application/json
+
+{
+    "projectId":"69394ddf9b17039a4efd8b63",
+    "title":"Important",
+    "body":"this is to inform...."
+}

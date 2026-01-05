@@ -1,0 +1,23 @@
+get http://localhost:3001/comments?taskId=691421df5437d466a8069174
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDg2OTMsImV4cCI6MTc2Mjk1MjI5M30.u35dhLHhKOLFDpt6MJiFOmWqlz-9u6vGGgik6MoX1Pk
+###create 
+post http://localhost:3001/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE1NmQzMTRhOGI1Yzk4ZmZmM2ZiNDQiLCJpYXQiOjE3NjMwMjQ2NDgsImV4cCI6MTc2MzAyODI0OH0.EqGlOkbYfp69rRhtiiBs_zgJ8H_4HTby2v7wyAuh2ZQ
+
+{
+    "taskId":"69159f18b40082c90c403752",
+    "message":"maximum 5 file",
+    "author":"69156d314a8b5c98fff3fb45"
+}
+###
+put http://localhost:3001/comments/69148238574265887f1a7be7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDg2OTMsImV4cCI6MTc2Mjk1MjI5M30.u35dhLHhKOLFDpt6MJiFOmWqlz-9u6vGGgik6MoX1Pk
+
+{
+    "message":"login done"
+}
+###
+DELETE http://localhost:3001/comments/69148268574265887f1a7bf1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDg2OTMsImV4cCI6MTc2Mjk1MjI5M30.u35dhLHhKOLFDpt6MJiFOmWqlz-9u6vGGgik6MoX1Pk

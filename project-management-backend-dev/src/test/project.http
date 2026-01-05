@@ -1,0 +1,38 @@
+post http://localhost:3001/project/
+Content-Type: application/json
+
+{
+    "name":"warehouse Management",
+    "projectType":"scrum",
+    "columns":["todo","in-progress","done"],
+    "memberLead":"6909fa3687f03877367010d0",
+    "tasks":"690881df2449d985dede9b20"
+}
+
+### project by id
+get http://localhost:3001/project/690afa01a7497e60110ccc2/
+Content-Type: application/json
+
+### update project
+put http://localhost:3001/project/69156d314a8b5c98fff3fb48/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE1NmQzMTRhOGI1Yzk4ZmZmM2ZiNDQiLCJpYXQiOjE3NjM1NDI0NTQsImV4cCI6MTc2MzU0NjA1NH0.t03-1vV0SdijL4obsp_Dt3DUE7AL-CCVSDWzfrGbDtA
+
+{
+    "name":"project 1",
+    "projectType":"kanban" ,
+}
+
+### delete project
+DELETE http://localhost:3001/project/690afda1e6ba378ab9ba9613/
+Content-Type: application/json
+
+### get all project
+
+GET http://localhost:3001/project/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBjMzI2Y2Q3MDc0NTFiOWRjNWVlNWYiLCJpYXQiOjE3NjI4NTE0MTYsImV4cCI6MTc2Mjg1MTUzNn0.FzuWX8AsOZ7JtZyoNCZMT2aDChma2IlVk0eGh6qMIMM
+
+### get user by project Id
+GET http://localhost:3001/project/get-user/69156d314a8b5c98fff3fb4a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE1NmQzMTRhOGI1Yzk4ZmZmM2ZiNDQiLCJpYXQiOjE3NjM1MzU5MDQsImV4cCI6MTc2MzUzOTUwNH0.R2u9Jkz4qYsqvpJkq7IU3ePTerCypEQ6o4ovphkF4Mg

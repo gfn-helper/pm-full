@@ -1,0 +1,11 @@
+POST http://localhost:3001/invite/email
+Content-Type: application/json
+
+{
+    "email": "username@gmail.com",
+    "projectId": "6932a52b2fe9fc5fc8a8e4e9"
+}
+###
+GET  http://localhost:3001/invite/join?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJuYW1lQGdtYWlsLmNvbSIsInByb2plY3RJZCI6IjY5MzJhNTJiMmZlOWZjNWZjOGE4ZTRlOSIsImlhdCI6MTc2NTE3ODQ3MywiZXhwIjoxNzY1MjY0ODczfQ._ePxe7v1ZJMqncB4X8xTI-MnFcP7_R3rbtpJetCjWkI
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTMxNTFlZmQ2Nzc0M2VjZWI3NmFmM2QiLCJlbWFpbCI6InVzZXJuYW1lQGdtYWlsLmNvbSIsImlhdCI6MTc2NTE3ODQ2MywiZXhwIjoxNzY1MTgxNDYzfQ.3W3tvOwjmniIa_Ijvdq6sz8wCop1cT7PEnJIbg2aysI

@@ -1,0 +1,36 @@
+get http://localhost:3001/sprint/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDAwOTYsImV4cCI6MTc2Mjk0MzY5Nn0._3GhvjLuBZ_jsppkBpNJRzspd6KvvOByFLSaFRBGXZE
+
+### create sprint
+post http://localhost:3001/sprint/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDAwOTYsImV4cCI6MTc2Mjk0MzY5Nn0._3GhvjLuBZ_jsppkBpNJRzspd6KvvOByFLSaFRBGXZE
+
+{
+    "name": "sprint3",
+    "key": "c",
+    "tasks":["691421df5437d466a8069187"],
+    "dueDate":"2025-07-10T18:30:00.000+00:00",
+    "isCompleted": false,
+    "projectId":"691421df5437d466a806917a"
+}
+
+### get Sprint by id 
+get http://localhost:3001/sprint/69145d03c8ad27549397584f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDAwOTYsImV4cCI6MTc2Mjk0MzY5Nn0._3GhvjLuBZ_jsppkBpNJRzspd6KvvOByFLSaFRBGXZE
+
+
+### update sprint
+put http://localhost:3001/sprint/69145d0cc8ad275493975853
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDAwOTYsImV4cCI6MTc2Mjk0MzY5Nn0._3GhvjLuBZ_jsppkBpNJRzspd6KvvOByFLSaFRBGXZE
+
+{
+    "isCompleted":true,
+    "dueDate": "2025-07-10T18:30:00.000+00:00"
+}
+
+### delete sprint by id
+delete http://localhost:3001/sprint/69145d03c8ad27549397584f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTE0Mjk1ZTkxN2EzMjcxNTdiNzk2OGQiLCJpYXQiOjE3NjI5NDAwOTYsImV4cCI6MTc2Mjk0MzY5Nn0._3GhvjLuBZ_jsppkBpNJRzspd6KvvOByFLSaFRBGXZE

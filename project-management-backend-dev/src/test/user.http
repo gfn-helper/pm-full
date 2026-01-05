@@ -1,0 +1,44 @@
+post http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+    "name":"shaswata",
+    "email":"shaswatabiswas707+1@gmail.com",
+    "password":"123456"
+}
+
+### Verify OTP
+post http://localhost:3001/auth/verify
+Content-Type: application/json
+
+{
+    "email":"shaswatabiswas707+1@gmail.com",
+    "otp":414127
+}
+
+### Login
+post http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "email":"username@gmail.com",
+    "password":"123456"
+}
+
+###
+post http://localhost:3001/auth/send-otp
+Content-Type: application/json
+
+{
+    "email":"shaswatabiswas707@gmail.com"
+}
+
+###
+post http://localhost:3001/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email":"shaswatabiswas707@gmail.com",
+    "otp":400032,
+    "password":"1122"
+}
